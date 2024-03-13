@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Educenter</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  
+
+<!-- header -->
+<header class="fixed-top header">
+  <!-- top header -->
+  
+    </div>
+  </div>
+  <!-- navbar -->
+  <div class="navigation w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <a class="navbar-brand" href="index.html"><img src="./images/logoclinicadovestibular.png" alt="logo"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item @@about">
+              <a class="nav-link" href="about.html">Quem Somos</a>
+            </li>
+            <li class="nav-item @@courses">
+              <a class="nav-link" href="courses.html">Como funciona</a>
+            </li>
+            </li>
+
+            <li class="nav-item dropdown view">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Nossos professores
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="profpriscila.html">Prof de Redação</a>
+                <a class="dropdown-item" href="profjessica.html">Prof de Português</a>
+                <a class="dropdown-item" href="profdaiane.html">Prof de Química</a>
+                <a class="dropdown-item" href="profjoana.html">Prof de Biologia</a>
+              </div>
+              <li class="nav-item @@blog">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+            </li>
+            <li class="nav-item @@contact">
+              <a class="nav-link" href="https://api.whatsapp.com/send?phone=5521996495980" target="_blank">Fale conosco</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Register</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <form action="#" class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                        </div>
+                        <div class="col-12">
+                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- page title -->
+<section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="blog.html">NOSSO BLOG</a></li>
+          <li class="list-inline-item text-white h3 font-secondary nasted">O ENEM e o BBB24</li>
+        </ul>
+        <p class="text-lighten"> Eu sei que você está pensando que não há conexão entre essas duas coisas, mas será que é mesmo assim?</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- blog details -->
+<section class="section-sm bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-4">
+        <img src="images/blog/blogbbbgrande.jpg" alt="blog-thumb" class="img-fluid w-100">
+      </div>
+      <div class="col-12">
+        <ul class="list-inline">
+          <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light">março, 2024</li>
+          <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><i class="ti-book mr-2"></i>Read 980</li>
+      </div>
+      <!-- border -->
+      <div class="col-12 mt-4">
+        <div class="border-bottom border-primary"></div>
+      </div>
+      <!-- blog contect -->
+      <div class="col-12 mb-5">
+        <h2>BBB24 como Repertório Sociocultural na Redação ENEM </h2>
+        <p>Você já parou para pensar em como o Big Brother Brasil 24 (BBB24) pode ser    
+            uma fonte incrível de repertório sociocultural para a sua redação do ENEM? 
+            <br>
+            <br>
+            Imagine só o que 
+            podemos descobrir ao explorar esse fenômeno televisivo tão presente no cotidiano dos brasileiros. 
+            Será que dentro da casa mais vigiada do país encontramos reflexos da diversidade linguística e cultural que 
+            caracteriza o Brasil? 
+            <br>
+            <br>
+            E quanto aos desafios enfrentados pelos participantes com deficiência, será que o programa 
+            nos oferece insights sobre a questão do capacitismo em nossa sociedade? E não podemos esquecer 
+            das manifestações de homofobia que eventualmente surgem entre os confinados,
+            será que isso nos leva a refletir sobre a necessidade de promover o respeito 
+            à diversidade sexual e de gênero? 
+            <br>
+            <br>
+            Ao mergulhar nesse universo, 
+            podemos desvendar uma série de questões sociais relevantes, 
+            despertando a nossa curiosidade e ampliando o nosso repertório 
+            para a tão esperada redação do ENEM.</p>
+        
+  
+        <p><strong>Vamos aprender a fazer detalhadamente?</strong>         
+          <br>
+          Vamos com calma,pois essa é uma leitura pequena que vai te ajudar muito nas Competências 2 e 3 da redação do Enem.</p>
+          <br>
+        <strong>1. Modelo do Tópico Frasal:</strong> 
+        <br>Inicialmente, introduziremos o parágrafo com uma frase que aborde o tema principal a 
+        ser discutido. Esta frase servirá como uma espécie de resumo do ponto que 
+        será desenvolvido ao longo do parágrafo.
+        <br>
+        <br>
+        <strong>2. Apresentação do Repertório Sociocultural:</strong> 
+        <br>Agora, partiremos para a apresentação de um exemplo concreto do repertório
+         sociocultural extraído do BBB24. Este exemplo pode se referir a um 
+         episódio marcante, um comportamento significativo por parte de um 
+         participante ou até mesmo uma discussão relevante que tenha ocorrido
+          dentro do programa. É crucial ressaltar que este é o momento 
+          de utilizar um repertório diretamente relacionado ao tema proposto 
+          na redação, respaldado por fontes confiáveis e pertinentes.
+        <br>
+        <br>
+        <strong>3. Contextualização do Repertório:</strong> 
+        <br>Após apresentarmos o repertório sociocultural, é hora de conectá-lo à nossa própria 
+        argumentação. 
+        <br>
+        <br>
+
+        <strong>4. Desfecho Crítico do Parágrafo:</strong>
+        <br>Ao chegarmos a este ponto, faremos uso de um conectivo de conclusão 
+        para destacar a importância do exemplo apresentado e sua relevância para a nossa 
+        argumentação principal. É neste momento que reforçaremos a tese, demonstrando que a 
+        problemática anunciada no parágrafo, seja ela qual for, é prejudicial para a sociedade como um todo.
+
+          
+          </p><strong>Exemplo Final (Parágrafo de desenvolvimento completo):</strong>
+          <br>
+          "Primeiramente, é possível observar um problema evidente de 
+          desprestígio em relação aos falares das regiões Norte e Nordeste. 
+          Isso fica claro ao analisarmos diretamente a dinâmica linguística entre os 
+          participantes do programa BBB24, como os personagens Davi, representante da 
+          Bahia, e Isabelle, natural do Amazonas. Embora o programa, transmitido pela emissora 
+          Rede Globo, selecione participantes de diferentes regiões do Brasil, evidenciando a 
+          rica diversidade linguística presente no país, ainda é visível na sociedade o menosprezo 
+          dos falares do Norte e do Nordeste. Ao mesmo tempo, observa-se uma valorização excessiva do 
+          falar da região Sudeste, principalmente do Rio de Janeiro e São Paulo, considerado como o 
+          "Português correto". Dessa forma, é crucial que para resolver o problema do preconceito 
+          linguístico com certas regiões do país, seja promovida uma maior conscientização sobre a 
+          riqueza e validade de todos os falares brasileiros." </p>
+
+          
+        </p><strong>Achou fácil?</strong>
+        <br>
+        Espero sinceramente que este material gratuito
+        tenha sido útil para você, assim como para milhares de outros
+        participantes que buscam ingressar no ensino superior. 
+        <br>
+        <br>
+        Mas se você ainda encontrar alguma 
+        dificuldade, não hesite em entrar em contato para conhecer nossos planos de aulas de 
+        redação ou pacotes com correção de redação, os quais podem te ajudar a praticar ainda mais. 
+        <br>
+        <br>
+        Lembre-se de que a prática constante é fundamental para aprimorar suas habilidades de escrita 
+        e garantir sucesso nas provas de redação. Estamos aqui para auxiliá-lo em cada etapa desse processo.</p>
+      </div>
+      <!-- comment box 
+      <div class="col-12">
+        <form action="#" class="row">
+          <div class="col-sm-6">
+            <input type="text" class="form-control mb-4" id="name" name="name" placeholder="Full Name">
+          </div>
+          <div class="col-sm-6">
+            <input type="email" class="form-control mb-4" id="mail" name="mail" placeholder="Email Address">
+          </div>
+          <div class="col-12">
+            <textarea name="comment" id="comment" class="form-control mb-4" placeholder="Comment Here..."></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" value="send" class="btn btn-primary">post comment</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>-->
+</section>
+<!-- /blog details -->
+
+<!-- recommended post -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Veja mais:</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+  <!-- blog post -->
+  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/blog/blogquimica.jpg" alt="Post thumb">
+      <div class="card-body">
+        <!-- post meta -->
+        <ul class="list-inline mb-3">
+          <!-- post date -->
+          <li class="list-inline-item mr-3 ml-0">03/2024</li>
+          <!-- author -->
+          <li class="list-inline-item mr-3 ml-0">Por Jessica Pessoa</li>
+        </ul>
+        <a href="crase.html">
+          <h4 class="card-title">Um guia fundamental para você dominar o uso da crase</h4>
+        </a>
+        <p class="card-text">Aprenda de uma vez por todas como e quando utilizá-la corretamente</p>
+        <a href="crase.html" class="btn btn-primary btn-sm">Aprenda aqui</a>
+      </div>
+    </div>
+  </article>
+  <!-- blog post -->
+  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/blog/blogqui.jpg" alt="Post thumb">
+      <div class="card-body">
+        <!-- post meta -->
+        <ul class="list-inline mb-3">
+          <!-- post date -->
+          <li class="list-inline-item mr-3 ml-0">03/2024</li>
+          <!-- author -->
+          <li class="list-inline-item mr-3 ml-0">Por Daiane Silva</li>
+        </ul>
+        <a href="blogquimica.html">
+          <h4 class="card-title">Matérias de Química mais cobradas no ENEM</h4>
+        </a>
+        <p class="card-text">Um guia completo para o seu sucesso e sua aprovação no vestibular</p>
+        <a href="blogquimica.html" class="btn btn-primary btn-sm">Veja aqui</a>
+      </div>
+    </div>
+  </article>
+  <!-- blog post -->
+  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/blog/blogbio.jpg" alt="Post thumb">
+      <div class="card-body">
+        <!-- post meta -->
+        <ul class="list-inline mb-3">
+          <!-- post date -->
+          <li class="list-inline-item mr-3 ml-0">03/2024</li>
+          <!-- author -->
+          <li class="list-inline-item mr-3 ml-0">Por Joana</li>
+        </ul>
+        <a href="blog-biologia.html">
+          <h4 class="card-title">Tudo sobre a Biologia no ENEM</h4>
+        </a>
+        <p class="card-text">Assuntos e tópicos mais cobrados na hora do exame </p>
+        <a href="blog-biologia.html" class="btn btn-primary btn-sm">Fique por dentro</a>
+      </div>
+    </div>
+  </article>
+</div>
+  </div>
+</section>
+<!-- /recommended post -->
+
+<!-- footer -->
+<footer>
+  <!-- footer content -->
+<!-- footer content -->
+<div class="footer bg-footer section border-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+        <!-- logo -->
+        <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="./images/logoclinicadovestibular.png" alt="logo"></a>
+        <ul class="list-unstyled">
+          <li class="mb-2">clinicadovestibular@gmail.com</li>
+        </ul>
+      </div>
+      <!-- company -->
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+        <h4 class="text-white mb-5">PROFESSORAS</h4>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-color" href="about.html">Sobre nós</a></li>
+          <li class="mb-3"><a class="text-color" href="profpriscila.html">Prof. de Redação</a></li>
+          <li class="mb-3"><a class="text-color" href="profjessica.html">Prof. de Português</a></li>
+          <li class="mb-3"><a class="text-color" href="profdaiane.html">Prof. de Química</a></li>
+          <li class="mb-3"><a class="text-color" href="profjoana.html">Prof. de Biologia</a></li>
+        </ul>
+      </div>
+      <!-- links -->
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+        <h4 class="text-white mb-5">LINKS</h4>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-color" href="blog.html">Dicas de estudo </a></li>
+          <li class="mb-3"><a class="text-color" href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem" target="_blank">Site do ENEM</a></a></li>
+          <li class="mb-3"><a class="text-color" href="https://www.vestibular.uerj.br" target="_blank">Site da UERJ</a></a></li>
+          <li class="mb-3"><a class="text-color" href="https://clinicadovestibular.my.canva.site/faqdaredacao" target="_blank">FAQ da Redação</a></a></li>
+          <li class="mb-3"><a class="text-color" href="https://clinicadovestibular.my.canva.site/redacaouerj" target="_blank">Material Gratuito</a></a></li>
+        </ul>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- copyright -->
+<div class="copyright py-4 bg-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7 text-sm-left text-center">
+        <p class="mb-0">Copyright
+          <script>
+            var CurrentYear = new Date().getFullYear()
+            document.write(CurrentYear)
+          </script> 
+          © </p> Todos os direitos Reservados
+          <p>Desenvolvido por Priscila Albuquerque</p>
+      </div>
+      <div class="col-sm-5 text-sm-right text-center">
+        <ul class="list-inline">
+        <!-- Redes sociais:  
+           <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.facebook.com/themefisher"><i class="ti-facebook text-primary"></i></a></li>
+          <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li> --> 
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- mixitup filter -->
+<script src="plugins/mixitup/mixitup.min.js"></script>
+<!-- google map -->
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+<script src="plugins/google-map/gmap.js"></script>-->
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

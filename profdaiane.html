@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Professora Daiane Conceição - Química</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  
+
+<!-- header -->
+<header class="fixed-top header">
+<!-- navbar -->
+<div class="navigation w-100">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <a class="navbar-brand" href="index.html"><img src="./images/logoclinicadovestibular.png" alt="logo"></a>
+      <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item @@about">
+            <a class="nav-link" href="about.html">Quem Somos</a>
+          </li>
+          <li class="nav-item @@courses">
+            <a class="nav-link" href="courses.html">Como funciona</a>
+          </li>
+          </li>
+
+          <li class="nav-item dropdown view">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Nossos professores
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="profpriscila.html">Prof de Redação</a>
+              <a class="dropdown-item" href="profjessica.html">Prof de Português</a>
+              <a class="dropdown-item" href="profdaiane.html">Prof de Química</a>
+              <a class="dropdown-item" href="profjoana.html">Prof de Biologia</a>
+            </div>
+            <li class="nav-item @@blog">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+          </li>
+          <li class="nav-item @@contact">
+            <a class="nav-link" href="https://api.whatsapp.com/send?phone=5521996495980" target="_blank">Fale conosco</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+</header>
+<!-- /header -->
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Register</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <form action="#" class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                        </div>
+                        <div class="col-12">
+                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- page title -->
+<section class="page-title-section overlay" data-background="images/backgrounds/1.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="profdaiane.html">Nossa professora</a></li>
+          <li class="list-inline-item text-white h3 font-secondary nasted">Daiane Conceição</li>
+        </ul>
+        <p class="text-lighten">Conheça a professora de Química: Mestre em Química, adora dançar nas horas vagas e adora falar sobre a área de cosméticos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- teacher details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 mb-5">
+        <img class="img-fluid w-100" src="images/teachers/profdaiane.png" alt="professoradaianeconceicao">
+      </div>
+      <div class="col-md-6 mb-5">
+        <h3>Daiane Conceição</h3>
+        <h6 class="text-color">QUÍMICA - UERJ</h6>
+        <p class="mb-5">
+          A professora, formada em Química pela Universidade do Estado
+          do Rio de Janeiro, dedica-se ao ensino há anos. Iniciou sua formação na UERJ, onde se graduou, 
+          e continuou na UFRJ, obtendo seu mestrado. Sua paixão pelo ensino a levou a
+           compartilhar conhecimentos, especialmente com alunos pré-vestibulandos, em cursos renomados no Rio de Janeiro. 
+           Com vasta experiência, concentrou-se nos desafios 
+           enfrentados por estudantes rumo ao ensino superior. Sua abordagem pedagógica eficaz e domínio da disciplina a tornaram uma mentora valorizada.
+        <br>
+        <br>
+
+
+</p>
+        <div class="row">
+          <div class="col-md-6 mb-5 mb-md-0">
+            <h4 class="mb-4">Fale com a professora:</h4>
+            <ul class="list-unstyled">
+              <li class="mb-3"><a class="text-color" href="mailto:priscilaalbuquerque.uerj@gmail.com"><i class="ti-email mr-2"></i>priscilaalbuquerque.uerj@gmail.com</a></li>
+              <li class="mb-3"><a class="text-color" href="https://www.linkedin.com/in/daiane-concei%C3%A7%C3%A3o-52239758/"><i class="ti-linkedin"></i> daiane-conceição-52239758</a></li>
+
+              
+
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h4 class="mb-4"></h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <h4 class="mb-4">COMO SÃO AS AULAS?</h4>
+        <p class="mb-5">        As aulas de Química ministradas pela professora Daiane são envolventes e interativas. 
+          Ela utiliza uma abordagem pedagógica dinâmica, combinando explicações claras com exemplos práticos e atividades
+           que estimulam o pensamento crítico dos alunos. A professora Daiane procura tornar os conceitos complexos da Química acessíveis e 
+           compreensíveis, utilizando recursos visuais, experimentos e demonstrações sempre que possível.
+        <BR>
+          <br>
+          Ela valoriza a participação dos alunos, incentivando perguntas e discussões em sala de aula 
+          para promover um ambiente de aprendizado colaborativo. Além disso, a professora Daiane procura relacionar os conteúdos 
+          de Química com situações do cotidiano dos estudantes, demonstrando a relevância e a aplicabilidade dos conceitos no mundo real.
+        </p>
+      </div>
+    </div>
+
+</section>
+<!-- /teacher details -->
+
+<!-- footer -->
+<footer>
+ 
+  <!-- footer content -->
+  <div class="footer bg-footer section border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+          <!-- logo -->
+          <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="./images/logoclinicadovestibular.png" alt="logo"></a>
+          <ul class="list-unstyled">
+            <li class="mb-2">clinicadovestibular@gmail.com</li>
+          </ul>
+        </div>
+        <!-- company -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">PROFESSORAS</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="about.html">Sobre nós</a></li>
+            <li class="mb-3"><a class="text-color" href="profpriscila.html">Prof. de Redação</a></li>
+            <li class="mb-3"><a class="text-color" href="profjessica.html">Prof. de Português</a></li>
+            <li class="mb-3"><a class="text-color" href="profdaiane.html">Prof. de Química</a></li>
+            <li class="mb-3"><a class="text-color" href="profjoana.html">Prof. de Biologia</a></li>
+          </ul>
+        </div>
+        <!-- links -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">LINKS</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="blog.html">Dicas de estudo </a></li>
+            <li class="mb-3"><a class="text-color" href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem" target="_blank">Site do ENEM</a></a></li>
+            <li class="mb-3"><a class="text-color" href="https://www.vestibular.uerj.br" target="_blank">Site da UERJ</a></a></li>
+            <li class="mb-3"><a class="text-color" href="https://clinicadovestibular.my.canva.site/faqdaredacao" target="_blank">FAQ da Redação</a></a></li>
+            <li class="mb-3"><a class="text-color" href="https://clinicadovestibular.my.canva.site/redacaouerj" target="_blank">Material Gratuito</a></a></li>
+          </ul>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">Copyright
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 
+            © </p> Todos os direitos Reservados
+            <p>Desenvolvido por Priscila Albuquerque</p>
+        </div>
+        <div class="col-sm-5 text-sm-right text-center">
+          <ul class="list-inline">
+          <!-- Redes sociais:  
+             <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.facebook.com/themefisher"><i class="ti-facebook text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li> --> 
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="whats">
+  <a href="https://wa.me/5521996495980" target="_blank">
+  <img src="./images/whatssapmedio.svg" alt="fale conosco pelo whatsApp" title="Fale Conosco pelo whatsApp" />
+
+<!-- /footer -->
+
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- mixitup filter -->
+<script src="plugins/mixitup/mixitup.min.js"></script>
+<!-- google map -->
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+<script src="plugins/google-map/gmap.js"></script>-->
+<script src="plugins/google-map/gmap.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

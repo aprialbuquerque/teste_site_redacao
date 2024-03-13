@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>PROJETO MEDICINA 2024</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  
+
+<!-- header -->
+<header class="fixed-top header">
+  <!-- navbar -->
+  <div class="navigation w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <a class="navbar-brand" href="index.html"><img src="./images/logoclinicadovestibular.png" alt="logo"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item @@about">
+              <a class="nav-link" href="about.html">Quem Somos</a>
+            </li>
+            <li class="nav-item @@courses">
+              <a class="nav-link" href="courses.html">Como funciona</a>
+            </li>
+            </li>
+
+            <li class="nav-item dropdown view">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Nossos professores
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="profpriscila.html">Prof de Redação</a>
+                <a class="dropdown-item" href="profjessica.html">Prof de Português</a>
+                <a class="dropdown-item" href="profdaiane.html">Prof de Química</a>
+                <a class="dropdown-item" href="profjoana.html">Prof de Biologia</a>
+              </div>
+              <li class="nav-item @@blog">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+            </li>
+            <li class="nav-item @@contact">
+              <a class="nav-link" href="https://api.whatsapp.com/send?phone=5521996495980" target="_blank">Fale conosco</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Register</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <form action="#" class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                        </div>
+                        <div class="col-12">
+                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- hero slider -->
+<section class="hero-section overlay bg-cover" data-background="images/banner/bannerestudo1.jpg">
+  <div class="container">
+    <div class="hero-slider">
+      <!-- slider item -->
+      <!-- slider item -->
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-white" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".1">O futuro na medicina espera por você. </h1>
+            <p class="text-muted mb-4" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".4"> Junte-se a nós e transforme sua jornada de estudos em uma experiência eficaz e gratificante. .</p>
+            <a href="contact.html" class="btn btn-primary" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".7">Quero minha aprovação já em 2024!</a>
+          </div>
+        </div>
+      </div>
+      <!-- slider item -->
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-white" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">Sua aprovação em Medicina começa aqui! </h1>
+            <p class="text-muted mb-4" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".4">Junte-se a nós e descubra como transformar seu sonho em realidade</p>
+            <a href="contact.html" class="btn btn-primary" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="zoomIn" data-delay-in=".7">Quero saber mais!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /hero slider -->
+
+<!-- banner-feature -->
+<section class="bg-gray">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+      <div class="col-xl-4 col-lg-5 align-self-end">
+        <!-- <img class="img-fluid w-100" src="images/banner/banner-feature.png" alt="banner-feature">
+      </div>
+      <div class="col-xl-8 col-lg-7">
+        <div class="row feature-blocks bg-gray justify-content-between">
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-book mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">AULA AVULSA</h3>
+            <p>Potencialize seu desempenho com nossas aulas particulares avulsas, 
+              por apenas 170 reais! Ideal para alunos que já têm aulas com frequência, como 
+              os matriculados em cursinhos, mas buscam um reforço personalizado mais pontual para se
+              destacarem nas provas. 
+              </p>
+          </div>
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-blackboard mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">PLANO MENSAL</h3>
+            <p>Maximize seu investimento em aprendizado com nosso plano mensal de aulas particulares por 
+              apenas 530 reais! Aproveite a vantagem de um preço fixo, garantindo mais aulas pelo mesmo valor. 
+              Ideal para manter uma rotina consistente de estudos e concentrar-se no aprimoramento de áreas específicas. 
+              </p>
+          </div>
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-agenda mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">CORREÇÃO DE REDAÇÃO </h3>
+            <p>Otimize seu tempo com nossa correção de redação premium! Não se trata apenas de receber uma nota, 
+              mas de uma experiência personalizada de aprendizado. Com uma sessão online exclusiva de 15 minutos, 
+              você receberá feedback construtivo para aprimorar suas habilidades, permitindo que estude 
+              autonomamente. Ideal para aqueles que vivem na correria e precisam de flexibilidade. 
+              Por apenas 260 reais, você terá 4 redações corrigidas e 4 sessões de feedback personalizado.  </p>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /banner-feature -->
+
+<!-- about us -->
+<section class="section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-2 order-md-1">
+        <h2 class="section-title">Procurando aulas para o vestibular de Medicina?</h2>
+        <p> Nós temos a solução! </p>
+          
+        <p> Somos um time de professores especializados em preparar alunos para o vestibular de Medicina e 
+          oferecemos aulas particulares 
+          adaptadas às suas necessidades individuais. 
+          Assim, você poderá enfrentar o ENEM e a UERJ com preparação 
+          adequada e conquistar uma nota maior nas provas de vestibular. </p>
+          
+          <p>Então, se você está determinado a passar no vestibular de Medicina em 2024 com mais confiança, 
+            está no lugar certo. 
+            
+            <p>Junte-se a nós e 
+              potencialize sua preparação para o vestibular!</p>
+          </p>
+          </p>
+        <p></p>
+        <a href="about.html" class="btn btn-primary-outline">Conheça os professores</a>
+      </div>
+      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+        <img class="img-fluid w-100" src="images/about/2.jpg" alt="about image">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about us -->
+
+<!-- courses -->
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-center section-title justify-content-between">
+          <h2 class="mb-0 text-nowrap mr-3">NOSSOS SERVIÇOS</h2>
+          <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+          <div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- course list -->
+<div class="row justify-content-center">
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/courses/1.jpg" alt="course thumb">
+      <div class="card-body">
+        <ul class="list-inline mb-2">          
+          <li class="list-inline-item"></i>R$170</li>
+        </ul>
+        <a href="course-single.html">
+          <h4 class="card-title">AULA PARTICULAR</h4>
+        </a>
+        <p class="card-text mb-4"> Potencialize seu desempenho com nossas aulas particulares avulsas, 
+          por apenas 170 reais! Ideal para quem já têm aulas com frequência, 
+          como os matriculados em escola e cursinhos, mas buscam um reforço personalizado mais pontual para se destacar nas provas.</p>
+        <a href="course-single.html" class="btn btn-primary btn-sm">Quero agendar minha aula</a>
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/courses/5.jpg" alt="course thumb">
+      <div class="card-body">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"></i>R$530</li>
+
+        </ul>
+        <a href="course-single.html">
+          <h4 class="card-title">PLANO MENSAL</h4>
+        </a>
+        <p class="card-text mb-4"> Maximize seu investimento em aprendizado com nosso plano mensal de aulas particulares por 
+          apenas 530 reais! Aproveite a vantagem de um preço fixo, garantindo mais aulas pelo mesmo valor. 
+          Ideal para manter uma rotina consistente de estudos e ao mesmo tempo personalizada. </p>
+        <a href="course-single.html" class="btn btn-primary btn-sm">Gostei mais dessa opção</a>
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/courses/2.jpg" alt="course thumb">
+      <div class="card-body">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"></i>R$260</li>
+        </ul>
+        <a href="course-single.html">
+          <h4 class="card-title">PACOTE DE CORREÇÕES</h4>
+        </a>
+        <p class="card-text mb-4"> Ideal para aqueles que vivem na correria! Não se trata apenas de ter uma nota, 
+          mas de uma experiência personalizada de aprendizado. Após entregar sua redação para a correção, você tem uma sessão de 15 minutos para
+          receber feedbacks, permitindo que estude autonomamente. </p>
+        <a href="course-single.html" class="btn btn-primary btn-sm">Quero saber mais</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- /courses -->
+
+<!-- cta -->
+<section class="section bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h6 class="text-white font-secondary mb-0"></h6>
+        <h2 class="section-title text-white">Maximize sua preparação para o vestibular agora!</h2>
+        <a href="contact.html" class="btn btn-secondary">Não quero perder tempo</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /cta -->
+
+
+<!-- events -->
+<section class="section bg-gray">
+  
+<!-- /events -->
+
+<!-- teachers -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h2 class="section-title">As professoras</h2>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="images/teachers/profpriscila.png" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title">Priscila Albuquerque</h4>
+            </a>
+            <p>Professora de Redação</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="images/teachers/profjessica.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title">Jéssica Pessoa</h4>
+            </a>
+            <p>Professora de Língua Portuguesa</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+      </div>
+      <br>
+      <br>
+      <!-- teacher -->
+      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="images/teachers/profdaiane.png" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title">Daiane Silva</h4>
+            </a>
+            <p>Professora de Química</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- teacher -->
+      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+        <div class="card border-0 rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="images/teachers/teacher-2.jpg" alt="teacher">
+          <div class="card-body">
+            <a href="teacher-single.html">
+              <h4 class="card-title">Joana</h4>
+            </a>
+            <p>Professora de Biologia</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</section>
+<!-- /teachers -->
+<!-- blog -->
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Mais lidos:</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+  <!-- blog post -->
+  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/blog/post1.jpg" alt="Post thumb">
+      <div class="card-body">
+        <!-- post meta -->
+        <ul class="list-inline mb-3">
+          <!-- post date -->
+          <li class="list-inline-item mr-3 ml-0">02/2024</li>
+          <!-- author -->
+          <li class="list-inline-item mr-3 ml-0">Por Priscila Albuquerque</li>
+        </ul>
+        <a href="blogindex.html">
+          <h4 class="card-title">Como não ser desclassificado no ENEM?</h4>
+        </a>
+        <p class="card-text">Um guia essencial para você não zerar a redação!</p>
+        <a href="blogindex.html" class="btn btn-primary btn-sm">Confira aqui</a>
+      </div>
+    </div>
+  </article>
+  <!-- blog post -->
+  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/blog/post2.jpg" alt="Post thumb">
+      <div class="card-body">
+        <!-- post meta -->
+        <ul class="list-inline mb-3">
+          <!-- post date -->
+          <li class="list-inline-item mr-3 ml-0">03/2024</li>
+          <!-- author -->
+          <li class="list-inline-item mr-3 ml-0">Por Priscila Albuquerque </li>
+        </ul>
+        <a href="blog-index-meio.html">
+          <h4 class="card-title"> Dominando a Competência 1 da redação</h4>
+        </a>
+        <p class="card-text">Descubra como redigir uma redação do ENEM impecável!</p>
+        <a href="blog-index-meio.html" class="btn btn-primary btn-sm">Leia mais</a>
+      </div>
+    </div>
+  </article>
+  <!-- blog post -->
+  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/blog/post3.jpg" alt="Post thumb">
+      <div class="card-body">
+        <!-- post meta -->
+        <ul class="list-inline mb-3">
+          <!-- post date -->
+          <li class="list-inline-item mr-3 ml-0">03/2024</li>
+          <!-- author -->
+          <li class="list-inline-item mr-3 ml-0">Por Priscila Albuquerque</li>
+        </ul>
+        <a href="blog-index-direita.html">
+          <h4 class="card-title">E se o BBB fosse o repertório da sua redação?</h4>
+        </a>
+        <p class="card-text">Saiba como usar até o BBB24 como repertório sociocultural 
+        </p>
+        <a href="blog-index-direita.html" class="btn btn-primary btn-sm">Saiba mais</a>
+      </div>
+    </div>
+  </article>
+</div>
+  </div>
+</section>
+<!-- /blog -->
+
+<!-- footer -->
+<footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer content -->
+  <div class="footer bg-footer section border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+          <!-- logo -->
+          <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="./images/logoclinicadovestibular.png" alt="logo"></a>
+          <ul class="list-unstyled">
+            <li class="mb-2">clinicadovestibular@gmail.com</li>
+          </ul>
+        </div>
+        <!-- company -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">PROFESSORAS</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="about.html">Sobre nós</a></li>
+            <li class="mb-3"><a class="text-color" href="profpriscila.html">Prof. de Redação</a></li>
+            <li class="mb-3"><a class="text-color" href="profjessica.html">Prof. de Português</a></li>
+            <li class="mb-3"><a class="text-color" href="profdaiane.html">Prof. de Química</a></li>
+            <li class="mb-3"><a class="text-color" href="profjoana.html">Prof. de Biologia</a></li>
+          </ul>
+        </div>
+        <!-- links -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">LINKS</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="blog.html">Dicas de estudo </a></li>
+            <li class="mb-3"><a class="text-color" href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem" target="_blank">Site do ENEM</a></a></li>
+            <li class="mb-3"><a class="text-color" href="https://www.vestibular.uerj.br" target="_blank">Site da UERJ</a></a></li>
+            <li class="mb-3"><a class="text-color" href="https://clinicadovestibular.my.canva.site/faqdaredacao" target="_blank">FAQ da Redação</a></a></li>
+            <li class="mb-3"><a class="text-color" href="https://clinicadovestibular.my.canva.site/redacaouerj" target="_blank">Material Gratuito</a></a></li>
+          </ul>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">Copyright
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 
+            © </p> Todos os direitos Reservados
+            <p>Desenvolvido por Priscila Albuquerque</p>
+        </div>
+        <div class="col-sm-5 text-sm-right text-center">
+          <ul class="list-inline">
+          <!-- Redes sociais:  
+             <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.facebook.com/themefisher"><i class="ti-facebook text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li> --> 
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="whats">
+  <a href="https://wa.me/5521996495980" target="_blank">
+  <img src="./images/whatssapmedio.svg" alt="fale conosco pelo whatsApp" title="Fale Conosco pelo whatsApp" />
+
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- mixitup filter -->
+<script src="plugins/mixitup/mixitup.min.js"></script>
+<!-- google map -->
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+<script src="plugins/google-map/gmap.js"></script>-->
+<script src="plugins/google-map/gmap.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
